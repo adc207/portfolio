@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrei Chaikovsky - Software Engineering Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header, nav, main, footer {
+      max-width: 960px;
+      margin: auto;
+      padding: 1em;
+    }
+    nav a {
+      margin-right: 1em;
+      text-decoration: none;
+      color: #0077cc;
+    }
+    .page {
+      background: white;
+      padding: 1.5em;
+      margin-top: 1em;
+    }
+    img.profile {
+      max-width: 150px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Andrei Chaikovsky</h1>
+    <p>Software Engineering Portfolio</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#internship">MIAX Internship</a>
+      <a href="#blog">Blog</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page">
+      <img src="profile.jpg" alt="Profile Picture" class="profile">
+      <h2>Welcome</h2>
+      <p>Hi, I'm Andrei, a senior Computer Science major at Rutgers University passionate about building intelligent, high-performance systems. This website showcases my projects, resume, and past internship experiences to help recruiters and collaborators get a better sense of my work and interests.</p>
+    </section>
+
+    <section id="resume" class="page">
+      <h2>Resume</h2>
+      <p>Below is a summary of my experience. For a full PDF version, feel free to <a href="Resume.pdf">download my resume</a>.</p>
+      <ul>
+        <li><strong>Education:</strong> B.S. in Computer Science, Rutgers University (2022–2026)</li>
+        <li><strong>Skills:</strong> Java, C, algorithms, data structures, debugging, tutoring</li>
+        <li><strong>Projects:</strong> Navigation app with Dijkstra, 2048-inspired tile game, classroom simulation system</li>
+        <li><strong>Experience:</strong> SEO specialist at Boosted Lab LLC, private tutoring in Java/physics/calculus</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="page">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Dijkstra Route Finder:</strong> Finds optimized routes using Dijkstra's algorithm</li>
+        <li><strong>Tile Game:</strong> Custom 2048-style game with undo support and tile combination logic</li>
+        <li><strong>Classroom Simulation:</strong> A coded environment for simulating student assignments and classroom dynamics</li>
+      </ul>
+    </section>
+
+    <section id="internship" class="page">
+      <h2>MIAX Exchange Internship</h2>
+      <p>During my internship with MIAX Exchange Group, I contributed to a trading systems development team where I worked on a TOM (Top of Market) application. My main responsibility was to build a system that took in the Best Bid and Offer (BBO) values after trade matching and broadcast them to other exchanges. This required careful handling of market data protocols and working closely with C++ systems to maintain ultra-low latency. I collaborated with previous interns' matching engine code and built atop it in a modular, efficient way.</p>
+    </section>
+
+    <section id="blog" class="page">
+      <h2>Blog</h2>
+      <article>
+        <h3>Why I Build</h3>
+        <p>Every line of code I write is a chance to improve how we solve problems. I enjoy understanding systems and creating tools that are actually used — whether in a trading engine or a puzzle game.</p>
+      </article>
+      <article>
+        <h3>Lessons from MIAX</h3>
+        <p>Working at MIAX taught me the real-world importance of performance and clarity. Comments, naming conventions, and communication with senior engineers were just as important as code that ran efficiently.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Andrei Chaikovsky</p>
+  </footer>
+</body>
+</html>
