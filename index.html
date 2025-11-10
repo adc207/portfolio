@@ -17,6 +17,7 @@
     .carousel img.active { opacity: 1; }
     .carousel-controls { text-align:center; margin-top:.5rem; }
     .carousel-controls button{ cursor:pointer; padding:.4rem .7rem; border:1px solid #ccc; background:#fff; border-radius:6px; margin:0 .25rem; }
+    .media-note { color:#333; font-size:.95rem; margin-top:.5rem; }
   </style>
 </head>
 <body>
@@ -41,7 +42,6 @@
 
       <!-- Site intro audio: NO heading, NO description -->
       <audio controls preload="metadata" style="display:block; margin:.75rem 0 0;">
-        <!-- same file; offer multiple mime types so it actually plays -->
         <source src="Recording%20(6).m4a" type="audio/mp4">
         <source src="Recording%20(6).m4a" type="audio/x-m4a">
         <source src="Recording%20(6).m4a" type="audio/aac">
@@ -77,7 +77,17 @@
     <!-- INTERNSHIP -->
     <section id="internship" class="page">
       <h2>MIAX Exchange Internship</h2>
-      <p>I worked on a TOM (Top of Market) application that broadcast post–matching engine BBO data to other exchanges. The work touched low-latency systems, data protocols, and collaborating on C++ code paths in production-style environments.</p>
+      <p>
+        I worked on a TOM (Top of Market) application that broadcast post–matching engine BBO data to other exchanges.
+        The work touched low-latency systems, data protocols, and collaborating on C++ code paths in production-style environments.
+        <strong>In the video below, I dive deeper into this internship and what I learned from it.</strong>
+      </p>
+
+      <!-- Screencast video MOVED here -->
+      <video width="100%" controls preload="metadata" style="margin-top:.75rem;">
+        <source src="Insights%20from%20MyEx_%20Navigating%20the%20Competitive%20Landscape%20of%20Stock%20Exchanges.mp4" type="video/mp4">
+        Your browser doesn’t support HTML5 video.
+      </video>
     </section>
 
     <!-- BLOG -->
@@ -97,7 +107,7 @@
     <section id="media" class="page">
       <h2>Media</h2>
 
-      <!-- Slideshow: ONLY MIAX + Cars (no headshot, no description) -->
+      <!-- Slideshow: ONLY MIAX + Cars -->
       <div class="carousel" id="carousel">
         <img src="image2.jfif" alt="MIAX at the NYSE" class="active">
         <img src="image3.jpeg" alt="Cars">
@@ -106,13 +116,7 @@
         <button id="prevBtn" aria-label="Previous">&#9664;</button>
         <button id="nextBtn" aria-label="Next">&#9654;</button>
       </div>
-
-      <!-- Video -->
-      <h3 style="margin-top:1.25rem;">Internship Screencast</h3>
-      <video width="100%" controls preload="metadata">
-        <source src="Insights%20from%20MyEx_%20Navigating%20the%20Competitive%20Landscape%20of%20Stock%20Exchanges.mp4" type="video/mp4">
-        Your browser doesn’t support HTML5 video.
-      </video>
+      <p class="media-note">Outside the office, I have a passion for competitive driving and car culture.</p>
     </section>
   </main>
 
