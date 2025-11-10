@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Andrei Chaikovsky - Software Engineering Portfolio</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
     header, nav, main, footer { max-width: 960px; margin: auto; padding: 1em; }
     nav a { margin-right: 1em; text-decoration: none; color: #0077cc; }
-    .page { background: white; padding: 1.5em; margin-top: 1em; }
-    img.profile { max-width: 150px; border-radius: 50%; }
-
-    /* Carousel */
-    .carousel { position: relative; width: 100%; max-width: 720px; margin: 0 auto .75rem; aspect-ratio: 16/9; overflow: hidden; border-radius: 10px; background:#ddd; }
-    .carousel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 600ms ease-in-out; }
+    .page { background: #fff; padding: 1.5em; margin-top: 1em; }
+    img.profile { max-width: 150px; border-radius: 50%; display:block; }
+    /* --- Carousel (2+ images) --- */
+    .carousel { position: relative; width: 100%; max-width: 820px; margin: 0.5rem auto 0; aspect-ratio: 16/9; overflow: hidden; border-radius: 10px; background:#e5e5e5; }
+    .carousel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 500ms ease-in-out; }
     .carousel img.active { opacity: 1; }
-    .carousel-controls { text-align:center; margin-bottom:.5rem; }
+    .carousel-controls { text-align:center; margin-top:.5rem; }
     .carousel-controls button{ cursor:pointer; padding:.4rem .7rem; border:1px solid #ccc; background:#fff; border-radius:6px; margin:0 .25rem; }
-    .media-caption{ color:#333; font-size:.95rem; margin-top:.25rem; }
   </style>
 </head>
 <body>
@@ -35,83 +33,84 @@
   </header>
 
   <main>
+    <!-- HOME -->
     <section id="home" class="page">
-      <!-- IMPORTANT: file name is case-sensitive -->
-      <img src="profile.JPG" alt="Profile Picture" class="profile">
+      <!-- Headshot -->
+      <img src="profile.JPG" alt="Profile picture" class="profile">
+
+      <!-- Site intro audio: no heading, no description (as requested) -->
+      <audio controls preload="metadata" style="display:block; margin:.75rem 0 0;">
+        <source src="Recording%20(6).m4a" type="audio/mp4">
+        Your browser doesn’t support audio.
+      </audio>
+
       <h2>Welcome</h2>
       <p>Hi, I'm Andrei, a senior Computer Science major at Rutgers University passionate about building intelligent, high-performance systems. This website showcases my projects, resume, and past internship experiences to help recruiters and collaborators get a better sense of my work and interests.</p>
     </section>
 
+    <!-- RESUME -->
     <section id="resume" class="page">
       <h2>Resume</h2>
-      <p>Below is a summary of my experience. For a full PDF version, feel free to <a href="Resume.pdf">download my resume</a>.</p>
+      <p>For a full PDF version, <a href="Resume.pdf">download my resume</a>.</p>
       <ul>
         <li><strong>Education:</strong> B.S. in Computer Science, Rutgers University (2022–2026)</li>
         <li><strong>Skills:</strong> Java, C, algorithms, data structures, debugging, tutoring</li>
-        <li><strong>Projects:</strong> Navigation app with Dijkstra, 2048-inspired tile game, classroom simulation system</li>
+        <li><strong>Projects:</strong> Navigation app with Dijkstra, 2048-style tile game, classroom simulation system</li>
         <li><strong>Experience:</strong> SEO specialist at Boosted Lab LLC, private tutoring in Java/physics/calculus</li>
       </ul>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="page">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Dijkstra Route Finder:</strong> Finds optimized routes using Dijkstra's algorithm</li>
-        <li><strong>Tile Game:</strong> Custom 2048-style game with undo support and tile combination logic</li>
-        <li><strong>Classroom Simulation:</strong> A coded environment for simulating student assignments and classroom dynamics</li>
+        <li><strong>Dijkstra Route Finder:</strong> Optimized routes using Dijkstra’s algorithm</li>
+        <li><strong>Tile Game:</strong> Custom 2048-style game with undo and merge logic</li>
+        <li><strong>Classroom Simulation:</strong> Simulated student assignment workflows</li>
       </ul>
     </section>
 
+    <!-- INTERNSHIP -->
     <section id="internship" class="page">
       <h2>MIAX Exchange Internship</h2>
-      <p>During my internship with MIAX Exchange Group, I contributed to a trading systems development team where I worked on a TOM (Top of Market) application. My main responsibility was to build a system that took in the Best Bid and Offer (BBO) values after trade matching and broadcast them to other exchanges. This required careful handling of market data protocols and working closely with C++ systems to maintain ultra-low latency. I collaborated with previous interns' matching engine code and built atop it in a modular, efficient way.</p>
+      <p>I worked on a TOM (Top of Market) application that broadcast post–matching engine BBO data to other exchanges. The work touched low-latency systems, data protocols, and collaborating on C++ code paths in production-style environments.</p>
     </section>
 
+    <!-- BLOG -->
     <section id="blog" class="page">
       <h2>Blog</h2>
       <article>
         <h3>Why I Build</h3>
-        <p>Every line of code I write is a chance to improve how we solve problems. I enjoy understanding systems and creating tools that are actually used — whether in a trading engine or a puzzle game.</p>
+        <p>I like building systems that are actually used—whether in a trading engine or a small tool.</p>
       </article>
       <article>
         <h3>Lessons from MIAX</h3>
-        <p>Working at MIAX taught me the real-world importance of performance and clarity. Comments, naming conventions, and communication with senior engineers were just as important as code that ran efficiently.</p>
+        <p>Performance matters, but so do naming, comments, and communicating clearly with teammates.</p>
       </article>
     </section>
 
-    <!-- ===== MEDIA (video + audio + 3-image carousel) ===== -->
+    <!-- MEDIA -->
     <section id="media" class="page">
       <h2>Media</h2>
 
-      <!-- Video -->
-      <h3>Internship Screencast</h3>
-      <video width="100%" controls preload="metadata">
-        <!-- Spaces must be URL-encoded: %20 -->
-        <source src="Insights%20from%20MyEx_%20Navigating%20the%20Competitive%20Landscape%20of%20Stock%20Exchanges.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-      <p class="media-caption">This video summarizes my MIAX internship and what I learned from working on trading systems.</p>
-
-      <!-- Audio -->
-      <h3>Site Intro (Audio)</h3>
-      <audio controls preload="metadata">
-        <source src="f81635d9-a780-4295-8d4b-cf2dcc609454.m4a" type="audio/mp4">
-        Your browser does not support the audio element.
-      </audio>
-      <p class="media-caption">A short welcome message that explains the purpose of this site.</p>
-
-      <!-- Slideshow -->
-      <h3>Photo Highlights</h3>
+      <!-- Slideshow: only MIAX + Cars (no headshot) -->
       <div class="carousel" id="carousel">
-        <img src="profile.JPG" alt="Headshot" class="active">
-        <img src="image2.jfif" alt="MIAX at the NYSE">
-        <img src="image3.jpeg" alt="Me and cars (I like cars)">
+        <img src="image2.jfif" alt="MIAX at the NYSE" class="active">
+        <img src="image3.jpeg" alt="Me with cars">
+        <!-- If you want a third slide later, just duplicate this line with another file: -->
+        <!-- <img src="another.jpg" alt="Third slide"> -->
       </div>
       <div class="carousel-controls">
-        <button id="prevBtn" aria-label="Previous image">&#9664;</button>
-        <button id="nextBtn" aria-label="Next image">&#9654;</button>
+        <button id="prevBtn" aria-label="Previous">&#9664;</button>
+        <button id="nextBtn" aria-label="Next">&#9654;</button>
       </div>
-      <p class="media-caption">Three images that represent me: a headshot, a MIAX photo, and a personal photo (cars).</p>
+
+      <!-- Video: exact filename with spaces encoded -->
+      <h3 style="margin-top:1.25rem;">Internship Screencast</h3>
+      <video width="100%" controls preload="metadata">
+        <source src="Insights%20from%20MyEx_%20Navigating%20the%20Competitive%20Landscape%20of%20Stock%20Exchanges.mp4" type="video/mp4">
+        Your browser doesn’t support HTML5 video.
+      </video>
     </section>
   </main>
 
@@ -120,19 +119,21 @@
   </footer>
 
   <script>
+    // Minimal carousel (works with 2 images or more)
     (function(){
       const imgs = Array.from(document.querySelectorAll('#carousel img'));
+      if (!imgs.length) return;
       const prev = document.getElementById('prevBtn');
       const next = document.getElementById('nextBtn');
-      let i = 0, timer = null;
+      let i = 0, timer;
 
-      function show(n){ imgs.forEach((img, idx) => img.classList.toggle('active', idx === n)); }
-      function advance(step){ i = (i + step + imgs.length) % imgs.length; show(i); resetTimer(); }
-      function resetTimer(){ if(timer) clearInterval(timer); timer = setInterval(() => advance(1), 3500); }
+      function show(n){ imgs.forEach((img, idx)=>img.classList.toggle('active', idx===n)); }
+      function advance(step){ i = (i + step + imgs.length) % imgs.length; show(i); reset(); }
+      function reset(){ clearInterval(timer); timer = setInterval(()=>advance(1), 3500); }
 
-      prev.addEventListener('click', () => advance(-1));
-      next.addEventListener('click', () => advance(1));
-      resetTimer();
+      prev.addEventListener('click', ()=>advance(-1));
+      next.addEventListener('click', ()=>advance(1));
+      reset();
     })();
   </script>
 </body>
